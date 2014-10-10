@@ -34,10 +34,14 @@
 		<developerConnection>scm:git:git@github.com:amaiberg/DEIIS-hw4-archetype.git</developerConnection>
 	</scm>
 	
-	<distributionManagement>
-		<repository>
-			<id>gh-pages</id>
-			<url>file:///${basedir}/../11791-hw4-archetype-gh-pages/repository</url>
-		</repository>
-	</distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/course-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/course-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
